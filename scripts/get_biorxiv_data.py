@@ -28,7 +28,7 @@ all_titles = []
 all_authors = []
 all_abstracts = []
 all_date = []
-for page in range(346, total_pages):
+for page in range(total_pages):
     print("now process page ", page, "    now paper num ", len(all_titles))
     this_page_url = url + "?page=" + str(page)
     resp = requests.post(this_page_url)
