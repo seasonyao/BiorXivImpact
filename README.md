@@ -21,28 +21,38 @@ Step 4: Download bioRxiv data using the following sript.
 Before doing so please set the necessary paths. This will create a csv file containing biorXiv records
 
 ```
-python get_biorxiv_data.py
+python scripts/get_biorxiv_data.py
 ```
 
 Step 5: Process the bioRxiv data to generate key phrases from every document by running the script
 Before doing so please set the necessary paths. This will create a pickle file containing key phrases for every document abstract. If you wish to include full text please modify the function accordingly to include necessary fields from the dataframe.
 
 ```
-python pytextrank_get_key_phrases.py
+python scripts/pytextrank_get_key_phrases.py
 ```
 
 Step 6: Look up occurrences and generate the time series data for each phrase in PMC and bioRxiv. This generates a json file for the list of phrases searched for.
-Before doing so please set the necessary paths as  well as set the index for the phrases you would like to search for. 
+Before doing so please set the necessary paths as  well as set the index for the phrases you would like to search for.  The following scripts were used to generate this data
 
+```
+scripts/pmc_occurrences.py
+scripts/biorxiv_occurrences.py
+```
 
-Step 7: Changepoint Detection
+Our results comparing the proposed Bayesian Model and the baseline can be found in the notebook
 
-Step 8: Bayesian Modelling 
+```
+bayesian_modeling_compare_pmc_biorxiv.ipynb
+```
 
-Step 9: Compare bioRxiv and PMC using Bayesian Modelling
+We performed a study of how PMC and biorXiv respond to virus outbreaks in the recet past. The results can be found in the notebook
+```
+study_of_response_to_virus_phrase.ipynb
+```
 
-Step 10: Study of viruses
-
-Step 11: Correlation study
+We performed a study to measure how bioRxiv content correlates with PMC and how it has changed over time. The results can be found in the notebook
+```
+study_of_correlation_between_biorxiv_and_pmc.ipynb
+```
 
 
