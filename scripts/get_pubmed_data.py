@@ -9,7 +9,7 @@ from six import string_types
 from lxml import etree
 from itertools import chain
 
-file_name = "Path/to/raw/data"
+file_name = "Path/to/raw/XMLFile"
 output_name = "Path/to/output/CSVFile"
 
 
