@@ -1,3 +1,8 @@
+## This is the code repository for the paper titled "The Impact of Preprint Servers in the Formation of Novel Ideas" accepted at EMNLP2020
+
+Link to paper: https://www.aclweb.org/anthology/2020.sdp-1.6/
+
+
 Step 1: Download Pubmed Open-Access subset
 
 ```bash
